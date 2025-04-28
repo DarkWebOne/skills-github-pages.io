@@ -2,3 +2,14 @@
 title: Welcome to my blog
 ---
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Skills GitHub Page</title>
+</head>
+<body>
+  <h1>Welcome to My GitHub Page!</h1>
+  <p>This page is under construction 🚧</p>
+</body>
+</html>
