@@ -2,10 +2,29 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>My Skills GitHub Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ site.title }}</title>
 </head>
 <body>
-  <h1>Welcome to My GitHub Page!</h1>
-  <p>This page is under construction 🚧</p>
+  <header>
+    <h1>{{ site.title }}</h1>
+    <p>{{ site.description }}</p>
+    <hr>
+  </header>
+
+  <main>
+    {% for post in site.posts %}
+      <article>
+        <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+        <p><small>Posted on {{ post.date | date: "%B %d, %Y" }}</small></p>
+        <p>{{ post.excerpt }}</p>
+      </article>
+      <hr>
+    {% endfor %}
+  </main>
+
+  <footer>
+    <p>© {{ site.time | date: "%Y" }} {{ site.title }}</p>
+  </footer>
 </body>
 </html>
